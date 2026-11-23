@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style class="text/css">
+        body{
+             height: 100vh; 
+            width: 100vw; 
+            margin: 0px;
+            color: white;
+            background-color: black;
+            
+        }
+        img{
+            width: 40px;
+            border-radius: 50px;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            height: 7vh;
+            width: 100vw;
+            
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            background-color: black;
+            
+            
+
+            
+        }
+
+        header span{
+            background-color: black;
+            
+        }
+        .hsearch{
+            border: 2px solid;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            width: 500px;
+            height: 5vh;
+            align-content: center;
+            font-size: 30px;
+            background-color: black;
+            
+            
+        }
+        .hsearch div {
+            background-color: black;
+        }
+        .bi.bi-mic{
+            font-size: 30px;
+            align-content: center;
+            background-color: rgb(70, 67, 67);
+            border-radius: 10px;
+        }
+       
+            
+        
+        header div{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(68, 66, 66);
+            
+           
+        }
+        .hdiv1 {
+            width: 230px;
+            font-size: 25px;
+            background-color: black;
+            
+            
+        }
+        
+        .bi.bi-youtube{
+            font-size: 35px;
+            color: red;
+        }
+        .bi.bi-list{
+            font-size: 35px;
+        }
+        .bi.bi-x-lg{
+           
+
+            margin-left: 250px;
+        }
+        .bi.bi-search{
+            background-color: rgb(70, 66, 66);
+            width: 60px;
+            
+        }
+        .hdiv2{
+            background-color: black;
+
+        }
+        
+        .hdiv3{
+            width: 230px;
+            margin-right: 10px;
+            font-size: 30px;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+
+        }
+        .bi.bi-plus{
+            padding: 2px;
+            border-radius: 20px;
+            color: white;
+            background-color: rgba(55, 48, 48, 0.761);
+        }
+        ul{
+            list-style-type: none;
+        }
+       
+        aside{
+            
+            width: 15vw;
+            top: 7vh;
+            position: fixed;
+            left: 0px;
+            height: 93vh;
+            overflow: scroll;
+        }
+
+        
+        
+        li{
+            margin: 5px;
+        }
+        .mainaside{ 
+            
+            
+           
+            display: flex;
+            overflow-x: scroll;
+            position: fixed;
+            top: 7vh;
+            left: 15vw;
+            right: 0px;
+            height: 6vh;
+            width: 85vw;
+            font-size: 23px;
+           
+            
+            
+        }
+        main{
+            
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            padding: 0;
+            
+            height: 93vh;
+            width:85vw;
+        }
+        
+           
+           
+        
+           
+        
+        .mainaside span{
+            border-radius: 10px;
+            padding: 5px;
+            flex: 0 0 auto;
+            margin: 3px;
+            height: 4vh;
+            
+            
+            background-color: rgb(81, 77, 77);
+            
+            
+           
+            
+            
+        }
+         .maindiv{
+            
+            
+            
+            position: fixed;
+            overflow-y: scroll;
+            bottom: 0px;
+            right: 0px;
+            height: 87vh;
+            width: 85vw;
+            
+        }
+        .idiv{
+            
+            display: flex;
+            justify-content: space-between;
+        }
+        .middiv2{
+            
+            display: flex;
+            justify-content: space-between;
+        }
+        .bi.bi-three-dots-vertical{
+            margin-top: 10px;
+            font-size: 30px;
+            
+        }
+        .bi.bi-person-circle{
+            margin-top: 10px;
+            font-size: 30px;
+
+        }
+        table{
+            width: 85vw;
+        }
+        td{
+            margin: 10px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+          
+        <div class="hdiv1">
+            <span class="bi bi-list"></span>   
+            <span class="bi bi-youtube"> </span>
+            <span>YOUTUBE<sup>IN</sup></span>
+        </div>
+        <div class="hdiv2">
+           <div class="hsearch">
+           <div>search</div>
+           <span class="bi bi-x-lg"></span>
+           <span class="bi bi-search"></span>
+           </div>
+          <span class="bi bi-mic"></span>
+
+        </div>
+        <div class="hdiv3">
+           <div class="bi bi-plus">Create</div>
+           <span class="bi bi-bell"></span>
+           <img src="/public/image/1E2F7BF0-BEDC-43B4-8810-9B64D9E82793_1_201_a.jpeg" alt="">
+        </div>
+    </header>
+    <aside>
+            <ul>
+                <li class="bi bi-house-door">Home</li>
+                <li class="bi bi-file-play-fill">shorts</li>
+            </ul>
+            <hr>
+            <ul>
+                <span>Subscription</span>
+                <span class="bi bi-caret-right-fill"></span>
+                <li><img src="/public/image/1E2F7BF0-BEDC-43B4-8810-9B64D9E82793_1_201_a.jpeg" alt=""><span>T series</span></li>
+                <li><img src="/public/image/1E2F7BF0-BEDC-43B4-8810-9B64D9E82793_1_201_a.jpeg" alt=""><span>T series</span></li>
+                <li><img src="/public/image/1E2F7BF0-BEDC-43B4-8810-9B64D9E82793_1_201_a.jpeg" alt=""><span>T series</span></li>
+                <li><img src="/public/image/1E2F7BF0-BEDC-43B4-8810-9B64D9E82793_1_201_a.jpeg" alt=""><span>T series</span></li>
+                <li><img src="/public/image/1E2F7BF0-BEDC-43B4-8810-9B64D9E82793_1_201_a.jpeg" alt=""><span>T series</span></li>
+            </ul>
+            <hr>
+            <ul>
+                <span>You</span>
+                <span class="bi bi-caret-right-fill"></span>
+                <li class="bi bi-person-square">your channel</li>
+                <li class="bi bi-clock-history">History</li>
+                <li class="bi bi-">Playlists</li>
+                <li class="bi bi-clock">Watch Later</li>
+                <li class="bi bi-hand-thumbs-up">Liked Videos</li>
+                <li class="bi bi-fire-play">Your Videos</li>
+                <li class="bi bi-download">Download</li>
+                <span>Sho More</span>
+                <span class="bi bi-caret-down-fill"></span>
+                
+            </ul>
+            <hr>
+            <ul>
+                <span>Explore</span>
+                <li class="bi bi-bag">Shopping</li>
+                <li class="bi bi-music-note">Music</li>
+                <li class="bi bi-film">Movie & TV</li>
+                <span>Sho More</span>
+                <span class="bi bi-caret-down-fill"></span>
+            </ul>
+            <hr>
+            <ul>
+                <span>More from YOUTUBE</span>
+                <li class="bi bi-file-play-fill">YoutubePremium</li>
+                <li class="bi bi-play-circle">Youtube music</li>
+                <li class="bi bi-file-play-fill">Youtube Kids</li>
+            </ul>
+            <hr>
+            <ul>
+                <li class="bi bi-flag">Report History</li>
+            </ul>
+            <hr>
+            <p>
+                <span>about</span>
+                <span>press</span>
+                <span>copyright</span>
+                <span>contact us</span>
+                <span>creator</span>
+                <span>advertise</span>
+                <span>developers</span>
+                <br>
+                <br>
+                <br>
+                <span>terms</span>
+                <span>privacy</span>
+                <span>policy & safety</span>
+                <span>how youtube work</span>
+                <span>test new feature</span>
+            </p>
+    </aside>    
+
+    
+    <main>
+        
+       
+        <aside class="mainaside">    
+            <span>All</span>
+            <span>Music</span>
+            <span>News</span>
+            <span>Mixes</span>
+            <span>Masala films</span>
+            <span>Thrillers</span>
+            <span>Military Exersice</span>
+            <span>Data Structure</span>
+            <span>T-Series</span>
+            <span>Live</span>
+            <span>Air Force</span>   
+            <span> strategies</span>
+            <span>Indian popmusic</span>
+            <span>Soul musics</span>
+            <span>Asian musics</span>
+            <span>Public speaking</span>
+            <span>Recently uploaded</span>
+            <span>Watched</span>
+            <span>new to you</span>
+            
+        </aside> 
+        <!-- <div class="maindiv">
+            <p>dcsndnsdcsdcsdsdksjkl</p>
+        </div> -->
+        <div class="maindiv">
+            <table >
+                <tr>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    <td class="table">
+                        
+
+                        <div>
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/f2ogKOsIJng?si=fOiykSCW1jbmcJbe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="idiv">
+                            <span class="bi bi-person-circle"></span>
+                            <div class="middiv" >
+                                <p>Unforgottable</p>
+                                <div class="middiv2">
+                                    <p>Talwinder</p>
+                                    <p class="bi bi-check-circle-fill"></p>
+                                    <p class="bi bi-caret-right">370crore 1 yr ago</p>
+                                </div>
+                            </div>
+                            <span class="bi bi-three-dots-vertical "></span>
+                        </div> 
+                    </td>
+                    
+                </tr>
+                
+               
+                
+                
+        
+            </table>
+        </div>
+   </main>
+</body>
+</html>
